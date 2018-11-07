@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "424113983868",
+    "firebase_url": "https://proyectotiti-6da63.firebaseio.com",
+    "project_id": "proyectotiti-6da63",
+    "storage_bucket": "proyectotiti-6da63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424113983868:android:70fd6b81d1bb14a2",
+        "android_client_info": {
+          "package_name": "com.example.proyectotiti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424113983868-gmbb25364lb24ttb2l0akav8q7p9kb48.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.proyectotiti",
+            "certificate_hash": "c95a07731b4ba1bd23761ad6a6f2e715e5c7ff0e"
+          }
+        },
+        {
+          "client_id": "424113983868-ujqc0bj4378rsvn4s81mr9g8c8sjsve2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5b3aWXS1B-8HPiN7OQ0A0oWBBtkg4YDc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "424113983868-ujqc0bj4378rsvn4s81mr9g8c8sjsve2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

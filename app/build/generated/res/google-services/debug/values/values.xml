@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">424113983868-ujqc0bj4378rsvn4s81mr9g8c8sjsve2.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://proyectotiti-6da63.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">424113983868</string>
+    <string name="google_api_key" translatable="false">AIzaSyC5b3aWXS1B-8HPiN7OQ0A0oWBBtkg4YDc</string>
+    <string name="google_app_id" translatable="false">1:424113983868:android:70fd6b81d1bb14a2</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC5b3aWXS1B-8HPiN7OQ0A0oWBBtkg4YDc</string>
+    <string name="google_storage_bucket" translatable="false">proyectotiti-6da63.appspot.com</string>
+    <string name="project_id" translatable="false">proyectotiti-6da63</string>
+</resources>

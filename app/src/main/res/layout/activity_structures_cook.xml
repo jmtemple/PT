@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.proyectotiti.structuresCook">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/proyectotiti"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="0dp"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MADERA DEL BOSQUE"
+        android:textSize="18sp"
+        android:paddingTop="0dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="300dp"
+        android:layout_height="240dp"
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/continueButton"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textViewCookingQ1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cocina con "
+                    android:textColor="#000000"
+                    android:textStyle="normal"
+                    android:paddingTop="10dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewCookingQ2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="leña "
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/textViewCookingQ3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.65"
+                    android:text=" ? "
+                    android:textColor="#000000"
+                    android:textStyle="normal"
+                    android:paddingTop="10dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25" >
+                <RadioButton
+                    android:id="@+id/radioButtonSiWood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sí"
+                    android:onClick="lenaUso"/>
+                <RadioButton
+                    android:id="@+id/radioButtonNoWood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No"
+                    android:onClick="lenaUsoNo"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewPurpose1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="0dp"
+                    android:text="¿Tipo de Uso?"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:visibility="gone"/>
+
+                <Spinner
+                    android:id="@+id/spinnerPurpose1"
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.16"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:visibility="gone"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textViewCookingQ4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cocina con "
+                    android:textColor="#000000"
+                    android:textStyle="normal"
+                    android:paddingTop="10dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewCookingQ5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="carbon "
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/textViewCookingQ6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.65"
+                    android:text=" ? "
+                    android:textColor="#000000"
+                    android:textStyle="normal"
+                    android:paddingTop="10dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25" >
+                <RadioButton
+                    android:id="@+id/radioButtonSiCoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sí"
+                    android:onClick="carbonUso"/>
+                <RadioButton
+                    android:id="@+id/radioButtonNoCoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No"
+                    android:onClick="carbonUsoNo"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewPurpose2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="0dp"
+                    android:text="¿Tipo de Uso?"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:visibility="gone"/>
+
+                <Spinner
+                    android:id="@+id/spinnerPurpose2"
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.16"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:visibility="gone"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textViewCookingQ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="0dp"
+                    android:text="Foto"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonCooking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_camera"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayoutMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="ANTERIOR"
+        android:onClick="openStructuresHome"/>
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="SIGUENTE"
+        android:onClick="submitStructure"/>
+
+</RelativeLayout>

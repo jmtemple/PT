@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.proyectotiti.structuresFence">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/proyectotiti"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="0dp"
+        tools:ignore="ContentDescription"/>
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MADERA DEL BOSQUE"
+        android:textSize="18sp"
+        android:layout_below="@+id/logo"
+        android:paddingTop="0dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:layout_width="305dp"
+        android:layout_height="240dp"
+        android:layout_below="@+id/title"
+        android:id="@+id/scrollView3"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout"
+            android:weightSum="1">
+
+
+            <EditText
+                android:id="@+id/editTextCercado"
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.24"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:ems="10"
+                android:hint="Nuevo Cercado"
+                android:inputType="textPersonName" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewFencesQ5"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:paddingTop="0dp"
+                    android:text="¿De que tipo?"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkboxYarumo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yarumo/Guarumo"
+                    android:onClick="checktwo"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ceiba roja"
+                    android:id="@+id/checkboxRoja"
+                    android:onClick="checktwo" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ceiba blanca"
+                    android:id="@+id/checkboxBlanca"
+                    android:onClick="checktwo"/>
+
+                <CheckBox
+                    android:id="@+id/checkboxCarreto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="checktwo"
+                    android:text="Carreto" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Bambú"
+                    android:id="@+id/checkboxBambu"
+                    android:onClick="checktwo" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkboxGuasimo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="checktwo"
+                    android:text="Guasimo" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Roble"
+                    android:id="@+id/checkboxRoble"
+                    android:onClick="checktwo" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Caña"
+                    android:id="@+id/checkboxCana"
+                    android:onClick="checktwo"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Otro"
+                    android:id="@+id/checkboxOtro"
+                    android:onClick="checktwo" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.24"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewConStructureOther"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:paddingTop="0dp"
+                    android:text="Otro"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/editTextOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:visibility="gone"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewFencesQ6"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.40"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="0dp"
+                    android:text="¿Cuantos metros lineales?"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/editTextPerimeter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_weight="0.16" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewFencesQ7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="0dp"
+                    android:text="¿Para que funcion?"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/editTextFunction"
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_weight="1.30" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewFencesQ8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="0dp"
+                    android:text="¿En que estado esta?"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <Spinner
+                    android:id="@+id/spinnerCondition"
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.62" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.24"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:textSize="16sp"
+                    android:text="Cumple"
+                    android:showText="true"
+                    android:textOff="No"
+                    android:textOn="Si"/>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextCompliance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Cumple observaciones"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="ANTERIOR"
+        android:onClick="openStructuresHome"/>
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="SIGUENTE"
+        android:onClick="submitStructure"/>
+
+</RelativeLayout>

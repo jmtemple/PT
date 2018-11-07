@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">Proyecto Titi</string>
+    <string name="username">usuario</string>
+    <string name="password">contrasena</string>
+    <string name="start_session">INICIAR SESION</string>
+    <string name="create_account">CREAR CUENTA</string>
+    <string name="forgot_password">CONTRASEÑA OLVIDADA</string>
+    <!--string-array name="spinnerWildAnimals">
+        <item>tití cabeciblanco</item>
+        <item>tigre</item>
+        <item>perezoso</item>
+        <item>pájaro</item>
+    </string-array>
+    <string-array name="spinnerDomesticAnimals">
+        <item> perro </item>
+        <item> gato </item>
+        <item> pájaro </item>
+    </string-array-->
+    <string-array name="spinnerDayArray">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+    <string-array name="spinnerMonthArray">
+        <item>enero</item>
+        <item>feb</item>
+        <item>marzo</item>
+        <item>abr</item>
+        <item>mayo</item>
+        <item>jun</item>
+        <item>jul</item>
+        <item>agosto</item>
+        <item>set</item>
+        <item>oct</item>
+        <item>nov</item>
+        <item>dic</item>
+    </string-array>
+    <string-array name="spinnerYearArray">
+        <item>2034</item>
+        <item>2033</item>
+        <item>2032</item>
+        <item>2031</item>
+        <item>2030</item>
+        <item>2029</item>
+        <item>2028</item>
+        <item>2027</item>
+        <item>2026</item>
+        <item>2025</item>
+        <item>2024</item>
+        <item>2023</item>
+        <item>2022</item>
+        <item>2021</item>
+        <item>2020</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+    </string-array>
+
+    <string-array name="spinnerAnimalUses">
+        <item>Mascota</item>
+        <item>Consumo</item>
+        <item>Mito</item>
+        <item>Trabajo</item>
+
+    </string-array>
+
+
+    <string-array name="spinnerNewConstruction">
+        <item>Quiosco</item>
+        <item>Terranza</item>
+        <item>Cerca Patio</item>
+        <item>Bahareque</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="spinnerCondition">
+        <item>Buen Estado</item>
+        <item>Mal Estado</item>
+        <item>Necesita Algunas Reparaciones</item>
+    </string-array>
+
+    <string-array name="spinnerFrequency">
+    <item>De 1 a 4 Veces por Semana</item>
+    <item>Todos Los Dias</item>
+    <item>Uso Ocasional</item>
+    </string-array>
+
+    <string-array name="spinnerPurposes">
+        <item>Doméstico</item>
+        <item>Comercial</item>
+        <item>Ambos</item>
+    </string-array>
+
+    <string-array name="arraySpinnerClassification">
+        <item>   </item>
+        <item>Reptiles</item>
+        <item>Aves</item>
+        <item>Mamíferos</item>
+    </string-array>
+
+    <string name="title_activity_view_visits">viewVisits</string>
+</resources>
